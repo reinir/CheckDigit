@@ -1,7 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width" charset="utf-8">
+<title>CheckDigit</title>
+</head>
+<body>
 <?php
 require './lib/.php';
 
-for ($i = 10; $i < 40; $i++) {
-    echo CheckDigit::append('00' . $i);
-    echo "<br>";
+echo "<h1>contoh generate</h1>\n";
+
+echo "<pre>";
+for ($i = 1; $i <= 40; $i++) {
+    $digits = str_pad($i, 9, '0', STR_PAD_LEFT);
+    echo $digits . ' -> ' . CheckDigit::append($digits) . '<br>';
 }
+echo "</pre>";
+
+echo "<h1>contoh validate</h1>\n";
+
+echo "<pre>";
+foreach (['1000', '1001', '1002', '1003', '1004', '1005', '1006', '1007', '1008', '1009'] as $digits) {
+    echo $digits . ' -> ' . (CheckDigit::validate($digits) ? 'valid' : 'invalid') . '<br>';
+}
+echo "</pre>";
