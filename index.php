@@ -20,7 +20,7 @@ echo "</pre>";
 echo "<h1>contoh validate</h1>\n";
 
 echo "<pre>";
-for ($digits = 100; $digits <= 200; $digits++) {
+for ($digits = 1100; $digits <= 1200; $digits++) {
     echo $digits . ' -> ' . (CheckDigit::validate($digits) ? 'valid' : 'invalid') . '<br>';
 }
 echo "</pre>";
