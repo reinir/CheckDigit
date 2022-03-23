@@ -6,4 +6,4 @@ Methods:
 - `CheckDigit::append($input)`, bikin check digit, outputnya `$input` plus check digit langsung ditambahin di paling kanan
 - `CheckDigit::validate($input)`, periksa `$input` yang udah ada check digitnya, outputnya boolean, `true` berarti valid
 
-File `index.php` berisi contoh penggunaan <http://reinir.id:8000/checkdigit/>
+File `index.php` berisi contoh penggunaan (<http://reinir.id:8000/checkdigit/>)
