@@ -20,7 +20,7 @@ echo "</pre>";
 echo "<h1>contoh validate</h1>\n";
 
 echo "<pre>";
-foreach (['1000', '1001', '1002', '1003', '1004', '1005', '1006', '1007', '1008', '1009'] as $digits) {
+for ($digits = 100; $digits <= 200; $digits++) {
     echo $digits . ' -> ' . (CheckDigit::validate($digits) ? 'valid' : 'invalid') . '<br>';
 }
 echo "</pre>";
