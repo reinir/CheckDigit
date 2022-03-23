@@ -14,15 +14,19 @@ class CheckDigit {
         [2, 5, 8, 1, 4, 3, 6, 7, 9, 0],
     ];
     
-    static function generate($digits) {
-        return array_reduce(str_split($digits), function ($a, $b) {return self::$table[$a][$b];}, 0);
+    static function generate($input) {
+        return array_reduce(str_split($input), function ($a, $b) {return self::$table[$a][$b];}, 0);
     }
     
-    static function append($digits) {
-        return $digits . self::generate($digits);
+    static function append($input) {
+        return $input . self::generate($input);
     }
     
-    static function validate($digits) {
-        return array_reduce(str_split($digits), function ($a, $b) {return self::$table[$a][$b];}, 0) == 0;
+    static function validate($input) {
+        return array_reduce(str_split($input), function ($a, $b) {return self::$table[$a][$b];}, 0) == 0;
+    }
+    
+    static function remove($input) {
+        return substr($input, 0, -1);
     }
 }
