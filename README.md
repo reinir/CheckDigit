@@ -5,3 +5,5 @@ Methods:
 - `CheckDigit::generate($input)`, bikin check digit, outputnya check digit aja
 - `CheckDigit::append($input)`, bikin check digit, outputnya `$input` plus check digit langsung ditambahin di paling kanan
 - `CheckDigit::validate($input)`, periksa `$input` yang udah ada check digitnya, outputnya boolean, `true` berarti valid
+
+File `index.php` berisi contoh penggunaan
