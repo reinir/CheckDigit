@@ -7,3 +7,5 @@ Methods:
 - `CheckDigit::validate($input)`, periksa `$input` yang udah ada check digitnya, outputnya boolean, `true` berarti valid
 
 File `index.php` berisi contoh penggunaan (<http://reinir.id:8000/checkdigit/>)
+
+## test
