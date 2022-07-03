@@ -9,3 +9,5 @@ Methods:
 File `index.php` berisi contoh penggunaan (<http://reinir.id:8000/checkdigit/>)
 
 ## test
+
+another test
