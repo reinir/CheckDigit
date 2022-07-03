@@ -1,4 +1,6 @@
-# CheckDigit
+CheckDigit
+==========
+
 Kelas PHP untuk bikin dan periksa check digit berdasarkan [algoritma Damm](https://en.wikipedia.org/wiki/Damm_algorithm)
 
 Methods:
@@ -6,4 +8,8 @@ Methods:
 - `CheckDigit::append($input)`, bikin check digit, outputnya `$input` plus check digit langsung ditambahin di paling kanan
 - `CheckDigit::validate($input)`, periksa `$input` yang udah ada check digitnya, outputnya boolean, `true` berarti valid
 
+Contoh penggunaan
+-----------------
+
 File `index.php` berisi contoh penggunaan (<http://reinir.id:8000/checkdigit/>)
+
