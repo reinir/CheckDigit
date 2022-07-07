@@ -1,5 +1,5 @@
 # CheckDigit
-Kelas PHP untuk bikin dan periksa check digit berdasarkan [algoritma Damm](https://en.wikipedia.org/wiki/Damm_algorithm)
+Kelas PHP untuk bikin dan periksa check digit
 
 Methods:
 - `CheckDigit::generate($input)`, bikin check digit, outputnya check digit aja
@@ -7,3 +7,4 @@ Methods:
 - `CheckDigit::validate($input)`, periksa `$input` yang udah ada check digitnya, outputnya boolean, `true` berarti valid
 
 File `index.php` berisi contoh penggunaan (<http://reinir.id:8000/checkdigit/>)
+
